@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ideias Casa Criativa</title>
+    {%include "head.html"%}
+
+  </head>
+  <body id="pagina-ideias" >
+   <div id="conteiner">
+    <header>
+      <a href="/"><img src="logo.png" alt="Logo da marca"/></a>
+      <nav>
+        <li><a href="/">Inicio</a></li>
+        <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+      </nav>
+    </header>
+
+    <section id="titulo">
+      <p>em exibição</p>
+      <h1>Ideias</h1>
+    </section>
+
+    <main>
+      <section id="ideias">
+        {%include "all_ideias.html"%}
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://rocketseat.com.br/" target="_blank" > <p>Rocketseat🚀</p></a>
+    </footer>
+   </div>
+   {%include "modal.html"%}
+
+    <script src="/script.js"></script>
+  </section>
+  </body>
+</html>

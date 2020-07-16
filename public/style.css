@@ -1,0 +1,292 @@
+/*
+
+*/
+
+body {
+  background: #e5e5e5;
+  color: #25282b;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body.hideScroll {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  color: #ff5e84;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+p,
+.descricao {
+  font-size: 16px;
+  letter-spacing: 0.1;
+  line-height: 24px;
+}
+.button {
+  text-decoration: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: 10px 8px 16px rgb(255, 0, 92, 0.16);
+  color: white;
+  background: #ff5e84;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  text-decoration: none;
+  background-color: #0984e3;
+}
+
+#conteiner {
+  width: 80%;
+  max-width: 980px;
+  margin: 40px auto;
+  display: flex;
+}
+main {
+  margin: 32px 0;
+}
+#intro {
+  width: 300px;
+  margin-right: 64px;
+}
+#butoes {
+  display: flex;
+  margin-bottom: 32px;
+  justify-content: space-evenly;
+}
+
+button {
+  border: none;
+  font-weight: bold;
+  background: none;
+  color: #ff5e84;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+button:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  font-weight: 400px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+footer a {
+  opacity: 0.7;
+}
+
+.ideia {
+  display: flex;
+  margin-bottom: 32px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+}
+
+.ideia img {
+  width: 60px;
+  height: 60px;
+  margin-right: 32px;
+}
+
+.ideia h3 {
+  margin: 0;
+}
+
+.ideia p {
+  margin: 8px 0;
+  color: #777;
+}
+
+.ideia .descricao {
+  margin: 16px 0;
+}
+
+/*MODAL*/
+
+#modal {
+  background-color: #ff5e84;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 400ms;
+}
+#modal.addScroll {
+  overflow: auto;
+}
+
+#modal .content {
+  margin-top: 28px;
+  color: white;
+}
+
+#modal .content h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+#modal form {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.content form div:nth-child(3) {
+  grid-column: span 2;
+}
+.content form div:nth-child(4) {
+  grid-column: span 2;
+}
+.content form div:nth-child(5) {
+  grid-column: span 2;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid rgba(141, 25, 52, 0.5);
+  outline: none;
+  font-size: 16px;
+}
+form label {
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+}
+form a {
+  background-color: #ffffff22;
+  color: white;
+
+  width: 150px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+
+  align-self: end;
+  transition: 400ms;
+}
+
+form a:hover {
+  background: #fff;
+  color: #ff5e84;
+  text-decoration: none;
+}
+
+form button {
+  margin-top: 32px;
+  background: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  grid-column: 2;
+  justify-self: end;
+  transition: 400ms;
+}
+
+form button:hover {
+  background-color: #0984e3;
+  color: white;
+  text-decoration: none;
+}
+
+#modal.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*IDEIAS HTML*/
+#pagina-ideias #conteiner {
+  display: block;
+}
+
+#pagina-ideias header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pagina-ideias nav {
+  display: flex;
+  align-items: center;
+}
+
+#pagina-ideias nav li {
+  list-style: none;
+  margin-right: 16px;
+}
+#pagina-ideias nav li a {
+  color: #25282b;
+}
+#pagina-ideias nav li a.button {
+  color: white;
+}
+#pagina-ideias nav li:last-child {
+  margin: 0;
+}
+
+section#titulo {
+  text-align: center;
+  margin: 64px 0;
+}
+
+section#titulo p {
+  opacity: 0.7;
+  margin: 0;
+}
+
+section#titulo h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+section#ideias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+section#ideias .ideia {
+  margin: 0;
+}
+
+section#ideias,
+section#titulo,
+footer {
+  margin-top: 64px;
+}
